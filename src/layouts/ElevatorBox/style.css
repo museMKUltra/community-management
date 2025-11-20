@@ -1,0 +1,22 @@
+.elevator-box {
+    --elevator-box-height: 165px;
+
+    box-sizing: border-box;
+    height: var(--elevator-box-height);
+    border-radius: var(--border-radius);
+    background-color: #20252ECC;
+    border: 0.5px solid var(--color-primary);
+}
+
+.elevator-box__title {
+    text-align: center;
+    padding: var(--space-5) var(--space-5) var(--space-7);
+    color: var(--color-gray-1);
+    font-size: var(--font-size-m);
+}
+
+.elevator-box__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 var(--space-6);
+}
