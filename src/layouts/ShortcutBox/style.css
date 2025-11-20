@@ -1,8 +1,8 @@
 .shortcut-box {
-    --shortcut-height: 560px;
+    --shortcut-box-height: 560px;
 
     box-sizing: border-box;
-    height: var(--shortcut-height);
+    height: var(--shortcut-box-height);
     border-radius: var(--border-radius);
     background-color: #20252ECC;
     border: 0.5px solid var(--color-primary);
