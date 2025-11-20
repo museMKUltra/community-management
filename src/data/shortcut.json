@@ -2,41 +2,49 @@
   "title": "常用捷徑",
   "list": [
     {
+      "key": "building",
       "name": "大樓戶外燈光",
       "icon": "light",
       "style": "primary"
     },
     {
+      "key": "park",
       "name": "花園公共燈光",
       "icon": "light",
       "style": "primary"
     },
     {
+      "key": "tree",
       "name": "噴灌 - 樹木區",
       "icon": "tree",
       "style": "danger"
     },
     {
+      "key": "tower",
       "name": "液位監控 - 水塔 1",
       "icon": "water",
       "style": "primary"
     },
     {
+      "key": "window",
       "name": "窗簾 - 接待大廳",
       "icon": "window",
       "style": "normal"
     },
     {
+      "key": "air",
       "name": "空調 - 接待大廳",
       "icon": "air",
       "style": "primary"
     },
     {
+      "key": "car",
       "name": "汽車閘門",
       "icon": "car",
       "style": "normal"
     },
     {
+      "key": "ride",
       "name": "機車閘門",
       "icon": "ride",
       "style": "normal"

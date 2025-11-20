@@ -1,0 +1,23 @@
+.shortcut-box {
+    --shortcut-height: 560px;
+
+    box-sizing: border-box;
+    height: var(--shortcut-height);
+    border-radius: var(--border-radius);
+    background-color: #20252ECC;
+    border: 0.5px solid var(--color-primary);
+}
+
+.shortcut-box__title {
+    text-align: center;
+    padding: var(--space-7) var(--space-5);
+    color: var(--color-gray-1);
+    font-size: var(--font-size-m);
+}
+
+.shortcut-box__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: var(--space-5);
+}

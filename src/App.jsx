@@ -9,6 +9,8 @@ import SearchInput from "./components/SearchInput";
 import SearchBox from "./layouts/SearchBox";
 import Monitor from "./components/Monitor";
 import MonitorBox from "./layouts/MonitorBox";
+import ShortcutBox from "./layouts/ShortcutBox";
+import shortcut from "./data/shortcut.json";
 
 function App() {
     return (
@@ -20,7 +22,7 @@ function App() {
             />
             <Container
                 leftTop={<MonitorBox><Monitor/></MonitorBox>}
-                leftCenter={<div style={{height: "560px"}}>leftCenter</div>}
+                leftCenter={<ShortcutBox title={shortcut.title} list={shortcut.list}/>}
                 leftBottom={<div style={{height: "156px"}}>leftBottom</div>}
                 rightTop={<div style={{height: "142px"}}>rightTop</div>}
                 rightBottom={<div style={{height: "798px"}}>rightBottom</div>}
