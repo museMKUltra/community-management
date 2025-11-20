@@ -1,0 +1,29 @@
+{
+  "title": "電梯即時狀態",
+  "list": [
+    {
+      "symbol": "A",
+      "number": "01",
+      "state": "down",
+      "floor": "11F"
+    },
+    {
+      "symbol": "A",
+      "number": "02",
+      "state": "still",
+      "floor": "21F"
+    },
+    {
+      "symbol": "B",
+      "number": "01",
+      "state": "still",
+      "floor": "7F"
+    },
+    {
+      "symbol": "B",
+      "number": "02",
+      "state": "up",
+      "floor": "8F"
+    }
+  ]
+}

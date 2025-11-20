@@ -1,0 +1,81 @@
+{
+  "title": "設備控制",
+  "displays": [
+    "情境",
+    "平面圖顯示",
+    "3D 圖顯示"
+  ],
+  "categories": [
+    "管理事項",
+    "系統設定"
+  ],
+  "avatar": {
+    "image": "avatar.jpg",
+    "name": "KEN",
+    "state": "值勤中"
+  },
+  "labels": [
+    {
+      "name": "停車設備",
+      "style": "normal"
+    },
+    {
+      "name": "噴灌設備",
+      "style": "normal"
+    },
+    {
+      "name": "液位監控",
+      "style": "normal"
+    },
+    {
+      "name": "電動窗簾",
+      "style": "normal"
+    },
+    {
+      "name": "暖通空調系統",
+      "style": "normal"
+    },
+    {
+      "name": "影音設備",
+      "style": "primary"
+    },
+    {
+      "name": "監視攝影系統",
+      "style": "normal"
+    },
+    {
+      "name": "照明控制",
+      "style": "normal"
+    },
+    {
+      "name": "門禁系統",
+      "style": "normal"
+    },
+    {
+      "name": "網通系統",
+      "style": "normal"
+    },
+    {
+      "name": "水電監控系統",
+      "style": "normal"
+    },
+    {
+      "name": "感測器設備",
+      "style": "normal"
+    }
+  ],
+  "tabs": [
+    {
+      "name": "影音設備",
+      "status": "active"
+    },
+    {
+      "name": "影音串流",
+      "status": "default"
+    },
+    {
+      "name": "歷史紀錄",
+      "status": "default"
+    }
+  ]
+}
