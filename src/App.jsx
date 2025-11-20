@@ -25,7 +25,6 @@ function App() {
             <Container
                 leftTop={<MonitorBox><Monitor/></MonitorBox>}
                 leftCenter={<ShortcutBox title={shortcut.title} list={shortcut.list}/>}
-                leftBottom={<div style={{height: "156px"}}>leftBottom</div>}
                 leftBottom={<ElevatorBox title={elevator.title} list={elevator.list}/>}
                 rightTop={<div style={{height: "142px"}}>rightTop</div>}
                 rightBottom={<div style={{height: "798px"}}>rightBottom</div>}
