@@ -5,6 +5,8 @@ import Logo from "./components/Logo";
 import basic from "./data/basic.json";
 import Weather from "./components/Weather";
 import MainTitle from "./components/MainTitle";
+import SearchInput from "./components/SearchInput";
+import SearchBox from "./layouts/SearchBox";
 
 function App() {
     return (
@@ -17,7 +19,7 @@ function App() {
                     </>
                 }
                 center={<MainTitle text={basic.title}/>}
-                right={<div>right</div>}
+                right={<SearchBox time={basic.time} search={<SearchInput />} />}
             />
             <Container
                 leftTop={<div>leftTop</div>}

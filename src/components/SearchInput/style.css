@@ -1,4 +1,5 @@
 .search-input {
+    --search-input-width: 250px;
     --search-input-height: 34px;
     --search-input-radius: calc(var(--search-input-height) / 2);
     --search-input-background: #7373734D;
@@ -6,6 +7,7 @@
 
     display: flex;
     align-items: center;
+    width: var(--search-input-width);
     height: var(--search-input-height);
     padding: 0 var(--space-3);
     border-radius: var(--search-input-radius);
