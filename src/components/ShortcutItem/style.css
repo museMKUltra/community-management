@@ -11,9 +11,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #A48743B2;
+    background: var(--shortcut-item-icon-color);
     border: 0.5px solid #A4874380;
     border-radius: 10px;
+}
+
+.shortcut-item__icon--primary {
+    --shortcut-item-icon-color: #A48743B2;
+}
+
+.shortcut-item__icon--normal {
+    --shortcut-item-icon-color: #97979733;
+}
+
+.shortcut-item__icon--danger {
+    --shortcut-item-icon-color: #F4A8A833;
 }
 
 .shortcut-item__name {
