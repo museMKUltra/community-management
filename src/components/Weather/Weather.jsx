@@ -7,6 +7,7 @@ function Weather({list}) {
             key={item.key}
             icon={`/community-management/icons/icon_${item.icon}.svg`}
             text={item.text}
+            style={item.style}
         />
     );
 

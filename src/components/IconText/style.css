@@ -9,3 +9,7 @@
     padding-left: var(--space-3);
     color: var(--color-gray-3);
 }
+
+.icon-text__text--danger {
+    color: var(--color-danger-medium);
+}

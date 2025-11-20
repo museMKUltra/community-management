@@ -4,17 +4,20 @@
     {
       "key": "temperature",
       "icon": "sun",
-      "text": "18°C"
+      "text": "18°C",
+      "style": ""
     },
     {
       "key": "aqi",
       "icon": "aqi",
-      "text": "27"
+      "text": "27",
+      "style": "danger"
     },
     {
       "key": "uv",
       "icon": "uv",
-      "text": "9"
+      "text": "9",
+      "style": ""
     }
   ],
   "time": {
