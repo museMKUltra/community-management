@@ -1,8 +1,10 @@
 .monitor {
+    --monitor-height: 203px;
+
     display: flex;
     overflow: hidden;
-    border-radius: 15px;
-    height: 203px;
+    border-radius: var(--border-radius);
+    height: var(--monitor-height);
 }
 
 .monitor__image {
