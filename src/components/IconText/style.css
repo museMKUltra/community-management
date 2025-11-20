@@ -1,0 +1,11 @@
+.icon-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-text__text {
+    font-size: var(--font-size-s);
+    padding-left: var(--space-3);
+    color: var(--color-gray-3);
+}
