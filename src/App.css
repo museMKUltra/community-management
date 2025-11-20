@@ -1,4 +1,8 @@
 :root {
+    --font-size-s: 16px;
+    --font-size-m: 20px;
+    --font-size-l: 24px;
+
     --space-1: 2px;
     --space-2: 4px;
     --space-3: 8px;
@@ -19,4 +23,8 @@
     --color-danger-medium: #FF2828;
 
     --color-info: #71B0C9;
+}
+
+body {
+    font-family: SF Pro, Helvetica Neue, Helvetica, Arial;
 }
