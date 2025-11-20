@@ -1,0 +1,36 @@
+.nav-bar {
+    --nav-bar-height: 84px;
+    --nav-bar-gradient-height: calc(0.20 * var(--nav-bar-height));
+    --nav-bar-linear-gradient: linear-gradient(180deg, rgba(164, 166, 179, 0) 0%, rgba(164, 166, 179, 0.2) 100%);
+
+    position: relative;
+    height: var(--nav-bar-height);
+    padding: 0 var(--space-7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: var(--color-gray-5);
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: var(--nav-bar-gradient-height);
+        background: var(--nav-bar-linear-gradient);
+    }
+}
+
+.nav-bar__left {
+    background-color: blue;
+}
+
+.nav-bar__center {
+    background-color: green;
+}
+
+.nav-bar__right {
+    background-color: orange;
+}

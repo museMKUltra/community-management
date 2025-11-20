@@ -1,0 +1,27 @@
+.container {
+    --container-cover: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    --container-image: url("../../assets/background_house.jpg");
+
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: var(--space-4);
+
+    padding: var(--space-4) var(--space-7) var(--space-7);
+    background: var(--container-cover), var(--container-image);
+    background-size: cover;
+    background-position: left top;
+}
+
+.container__left {
+    display: grid;
+    grid-template-rows: 1fr min-content min-content;
+    gap: var(--space-4);
+    background-color: red;
+}
+
+.container__right {
+    display: grid;
+    grid-auto-rows: min-content;
+    gap: var(--space-4);
+    background-color: yellow;
+}
