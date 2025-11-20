@@ -24,7 +24,8 @@
 }
 
 .nav-bar__left {
-    background-color: blue;
+    display: flex;
+    gap: var(--space-5)
 }
 
 .nav-bar__center {

@@ -1,12 +1,20 @@
 import './App.css'
 import NavBar from "./layouts/NavBar";
 import Container from "./layouts/Container";
+import Logo from "./components/Logo";
+import basic from "./data/basic.json";
+import Weather from "./components/Weather";
 
 function App() {
     return (
         <>
             <NavBar
-                left={<div>left</div>}
+                left={
+                    <>
+                        <Logo/>
+                        <Weather list={basic.weather}/>
+                    </>
+                }
                 right={<div>right</div>}
                 center={<div>center</div>}
             />
