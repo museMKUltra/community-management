@@ -1,0 +1,16 @@
+.logo {
+    display: grid;
+    grid-auto-rows: auto;
+    gap: var(--space-4);
+    width: 200px;
+}
+
+.logo__main {
+    height: 20px;
+    width: auto;
+}
+
+.logo__vice {
+    height: 36px;
+    width: auto;
+}
