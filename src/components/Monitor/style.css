@@ -1,0 +1,10 @@
+.monitor {
+    display: flex;
+    overflow: hidden;
+    border-radius: 15px;
+    height: 203px;
+}
+
+.monitor__image {
+    flex: 1;
+}

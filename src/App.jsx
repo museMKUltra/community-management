@@ -7,26 +7,22 @@ import Weather from "./components/Weather";
 import MainTitle from "./components/MainTitle";
 import SearchInput from "./components/SearchInput";
 import SearchBox from "./layouts/SearchBox";
+import Monitor from "./components/Monitor";
 
 function App() {
     return (
         <>
             <NavBar
-                left={
-                    <>
-                        <Logo/>
-                        <Weather list={basic.weather}/>
-                    </>
-                }
+                left={<> <Logo/> <Weather list={basic.weather}/> </>}
                 center={<MainTitle text={basic.title}/>}
-                right={<SearchBox time={basic.time} search={<SearchInput />} />}
+                right={<SearchBox time={basic.time} search={<SearchInput/>}/>}
             />
             <Container
-                leftTop={<div>leftTop</div>}
-                leftCenter={<div>leftCenter</div>}
-                leftBottom={<div>leftBottom</div>}
-                rightTop={<div>rightTop</div>}
-                rightBottom={<div>rightBottom</div>}
+                leftTop={<Monitor/>}
+                leftCenter={<div style={{height: "560px"}}>leftCenter</div>}
+                leftBottom={<div style={{height: "156px"}}>leftBottom</div>}
+                rightTop={<div style={{height: "142px"}}>rightTop</div>}
+                rightBottom={<div style={{height: "798px"}}>rightBottom</div>}
             />
         </>
     )

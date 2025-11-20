@@ -14,14 +14,10 @@
 
 .container__left {
     display: grid;
-    grid-template-rows: 1fr min-content min-content;
     gap: var(--space-4);
-    background-color: red;
 }
 
 .container__right {
     display: grid;
-    grid-auto-rows: min-content;
     gap: var(--space-4);
-    background-color: yellow;
 }
