@@ -4,6 +4,7 @@ import Container from "./layouts/Container";
 import Logo from "./components/Logo";
 import basic from "./data/basic.json";
 import Weather from "./components/Weather";
+import MainTitle from "./components/MainTitle";
 
 function App() {
     return (
@@ -15,8 +16,8 @@ function App() {
                         <Weather list={basic.weather}/>
                     </>
                 }
+                center={<MainTitle text={basic.title}/>}
                 right={<div>right</div>}
-                center={<div>center</div>}
             />
             <Container
                 leftTop={<div>leftTop</div>}
