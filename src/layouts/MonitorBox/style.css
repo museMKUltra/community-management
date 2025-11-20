@@ -1,0 +1,8 @@
+.monitor-box {
+    --monitor-height: 203px;
+
+    display: flex;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    height: var(--monitor-height);
+}

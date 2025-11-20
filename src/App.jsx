@@ -8,6 +8,7 @@ import MainTitle from "./components/MainTitle";
 import SearchInput from "./components/SearchInput";
 import SearchBox from "./layouts/SearchBox";
 import Monitor from "./components/Monitor";
+import MonitorBox from "./layouts/MonitorBox";
 
 function App() {
     return (
@@ -18,7 +19,7 @@ function App() {
                 right={<SearchBox time={basic.time} search={<SearchInput/>}/>}
             />
             <Container
-                leftTop={<Monitor/>}
+                leftTop={<MonitorBox><Monitor/></MonitorBox>}
                 leftCenter={<div style={{height: "560px"}}>leftCenter</div>}
                 leftBottom={<div style={{height: "156px"}}>leftBottom</div>}
                 rightTop={<div style={{height: "142px"}}>rightTop</div>}
