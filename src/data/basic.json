@@ -1,10 +1,22 @@
 {
   "title": "瑞司智慧社區管委會",
-  "weather": {
-    "temperature": "18°C",
-    "aqi": 27,
-    "ur": 9
-  },
+  "weather": [
+    {
+      "key": "temperature",
+      "icon": "sun",
+      "text": "18°C"
+    },
+    {
+      "key": "aqi",
+      "icon": "aqi",
+      "text": "27"
+    },
+    {
+      "key": "uv",
+      "icon": "uv",
+      "text": "9"
+    }
+  ],
   "time": {
     "date": "07 月 23日 2025 年",
     "day": "週五  15 : 25   甲辰年 九月 廿三"
