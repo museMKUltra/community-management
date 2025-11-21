@@ -1,11 +1,11 @@
 import "./style.css";
 
 function ControlDisplay({title, list}) {
-    const displays = list.map((item) => <>
+    const displays = list.map((item) =>
         <button className="control-display__item" key={item.key}>
             {item.name}
         </button>
-    </>);
+    );
 
     return (
         <div className="control-display">
