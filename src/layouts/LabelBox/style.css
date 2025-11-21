@@ -7,7 +7,7 @@
 }
 
 .label-box__panel {
-    --label-box-panel-height: 52px;
+    --label-box-panel-height: 54px;
 
     display: flex;
     justify-content: space-between;
