@@ -37,10 +37,10 @@ function App() {
                             <PanelLeft title={panel.title} displays={panel.displays} categories={panel.categories}/>
                         }
                         panelRight={
-                        <>
-                            <IconButton icon="bar_large"/>
-                            <Avatar avatar={panel.avatar} />
-                        </>
+                            <>
+                                <IconButton icon="bar_large"/>
+                                <Avatar avatar={panel.avatar}/>
+                            </>
                         }
                     />
                 }
