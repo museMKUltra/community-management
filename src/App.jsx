@@ -14,8 +14,10 @@ import shortcut from "./data/shortcut.json";
 import ElevatorBox from "./layouts/ElevatorBox";
 import elevator from "./data/elevator.json";
 import LabelBox from "./layouts/LabelBox";
-import Panel from "./components/Panel";
+import PanelLeft from "./components/Panel";
 import panel from "./data/panel.json";
+import IconButton from "./components/IconButton";
+import Avatar from "./components/Avatar";
 
 function App() {
     return (
@@ -32,7 +34,13 @@ function App() {
                 rightTop={
                     <LabelBox
                         panelLeft={
-                            <Panel title={panel.title} displays={panel.displays} categories={panel.categories}/>
+                            <PanelLeft title={panel.title} displays={panel.displays} categories={panel.categories}/>
+                        }
+                        panelRight={
+                        <>
+                            <IconButton icon="bar_large"/>
+                            <Avatar avatar={panel.avatar} />
+                        </>
                         }
                     />
                 }

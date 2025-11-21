@@ -23,6 +23,7 @@
 
 .label-box__panel-right {
     display: flex;
+    gap: var(--space-7);
     align-items: center;
     padding-right: var(--space-3);
 }
