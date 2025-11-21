@@ -31,50 +31,62 @@
   },
   "labels": [
     {
+      "key": "car",
       "name": "停車設備",
       "style": "normal"
     },
     {
+      "key": "water",
       "name": "噴灌設備",
       "style": "normal"
     },
     {
+      "key": "liquid",
       "name": "液位監控",
       "style": "normal"
     },
     {
+      "key": "window",
       "name": "電動窗簾",
       "style": "normal"
     },
     {
+      "key": "air",
       "name": "暖通空調系統",
       "style": "normal"
     },
     {
+      "key": "video",
       "name": "影音設備",
       "style": "primary"
     },
     {
+      "key": "monitor",
       "name": "監視攝影系統",
       "style": "normal"
     },
     {
+      "key": "light",
       "name": "照明控制",
       "style": "normal"
     },
     {
+      "key": "",
       "name": "門禁系統",
       "style": "normal"
     },
     {
+      "key": "",
       "name": "網通系統",
       "style": "normal"
     },
     {
+      "key": "",
       "name": "水電監控系統",
       "style": "normal"
     },
     {
+      "key": "",
       "name": "感測器設備",
       "style": "normal"
     }

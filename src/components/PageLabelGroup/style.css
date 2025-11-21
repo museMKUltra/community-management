@@ -1,0 +1,12 @@
+.page-label-group {
+}
+
+.page-label-group__row1 {
+    display: flex;
+}
+
+.page-label-group__row2 {
+    display: flex;
+    position: relative;
+    top: -8px;
+}

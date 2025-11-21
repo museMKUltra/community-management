@@ -32,5 +32,4 @@
     display: flex;
     align-items: start;
     padding: 0 var(--space-4);
-    overflow: auto;
 }

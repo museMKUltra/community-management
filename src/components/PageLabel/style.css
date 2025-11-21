@@ -1,0 +1,25 @@
+.page-label {
+    box-sizing: border-box;
+    width: 220px;
+    height: 44px;
+    display: flex;
+    gap: var(--space-4);
+    align-items: center;
+    padding-top: var(--space-1);
+    padding-left: var(--space-5);
+    background-image: url("../../assets/page_label.png");
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    /* reset style of button */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.page-label__text {
+    color: var(--color-gray-1);
+    font-size: var(--font-size-m);
+}

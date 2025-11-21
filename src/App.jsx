@@ -18,6 +18,7 @@ import PanelLeft from "./components/Panel";
 import panel from "./data/panel.json";
 import IconButton from "./components/IconButton";
 import Avatar from "./components/Avatar";
+import PageLabelGroup from "./components/PageLabelGroup";
 
 function App() {
     return (
@@ -41,6 +42,9 @@ function App() {
                                 <IconButton icon="bar_large"/>
                                 <Avatar avatar={panel.avatar}/>
                             </>
+                        }
+                        labels={
+                            <PageLabelGroup list={panel.labels}/>
                         }
                     />
                 }
