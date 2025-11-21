@@ -38,14 +38,9 @@ function App() {
                             <PanelLeft title={panel.title} displays={panel.displays} categories={panel.categories}/>
                         }
                         panelRight={
-                            <>
-                                <IconButton icon="bar_large"/>
-                                <Avatar avatar={panel.avatar}/>
-                            </>
+                            <> <IconButton icon="bar_large"/> <Avatar avatar={panel.avatar}/> </>
                         }
-                        labels={
-                            <PageLabelGroup list={panel.labels}/>
-                        }
+                        labels={<PageLabelGroup list={panel.labels}/>}
                     />
                 }
                 rightBottom={<div style={{height: "798px"}}>rightBottom</div>}
