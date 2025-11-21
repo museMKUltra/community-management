@@ -1,3 +1,4 @@
+import {Fragment} from "react";
 import "./style.css";
 import ShortcutItem, {ShortcutDivider} from "../../components/ShortcutItem";
 
@@ -9,13 +10,13 @@ function ShortcutBox({title, list}) {
             const isLastTowItem = index >= list.length - 2;
             const doDividerAppend = isEvenItem && !isLastTowItem;
 
-            return <>
-                <ShortcutItem key={item.key} item={item}/>
+            return <Fragment key={item.key}>
+                <ShortcutItem item={item}/>
                 {doDividerAppend && (<>
                     <ShortcutDivider/>
                     <ShortcutDivider/>
                 </>)}
-            </>
+            </Fragment>;
         }
     );
 
