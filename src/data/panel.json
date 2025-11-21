@@ -1,13 +1,28 @@
 {
   "title": "設備控制",
   "displays": [
-    "情境",
-    "平面圖顯示",
-    "3D 圖顯示"
+    {
+      "key": "situation",
+      "name": "情境"
+    },
+    {
+      "key": "plat",
+      "name": "平面圖顯示"
+    },
+    {
+      "key": "3d",
+      "name": "3D 圖顯示"
+    }
   ],
   "categories": [
-    "管理事項",
-    "系統設定"
+    {
+      "key": "matters",
+      "name": "管理事項"
+    },
+    {
+      "key": "settings",
+      "name": "系統設定"
+    }
   ],
   "avatar": {
     "image": "avatar.jpg",

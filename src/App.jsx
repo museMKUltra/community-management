@@ -13,6 +13,9 @@ import ShortcutBox from "./layouts/ShortcutBox";
 import shortcut from "./data/shortcut.json";
 import ElevatorBox from "./layouts/ElevatorBox";
 import elevator from "./data/elevator.json";
+import LabelBox from "./layouts/LabelBox";
+import Panel from "./components/Panel";
+import panel from "./data/panel.json";
 
 function App() {
     return (
@@ -26,7 +29,13 @@ function App() {
                 leftTop={<MonitorBox><Monitor/></MonitorBox>}
                 leftCenter={<ShortcutBox title={shortcut.title} list={shortcut.list}/>}
                 leftBottom={<ElevatorBox title={elevator.title} list={elevator.list}/>}
-                rightTop={<div style={{height: "142px"}}>rightTop</div>}
+                rightTop={
+                    <LabelBox
+                        panelLeft={
+                            <Panel title={panel.title} displays={panel.displays} categories={panel.categories}/>
+                        }
+                    />
+                }
                 rightBottom={<div style={{height: "798px"}}>rightBottom</div>}
             />
         </>

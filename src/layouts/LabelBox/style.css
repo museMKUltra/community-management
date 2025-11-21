@@ -1,0 +1,35 @@
+.label-box {
+    --label-box-height: 142px;
+
+    height: var(--label-box-height);
+    background-color: #FFFFFF1A;
+    border-radius: var(--border-radius);
+}
+
+.label-box__panel {
+    --label-box-panel-height: 52px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--label-box-panel-height);
+}
+
+.label-box__panel-left {
+    display: flex;
+    align-items: center;
+    padding-left: var(--space-5);
+}
+
+.label-box__panel-right {
+    display: flex;
+    align-items: center;
+    padding-right: var(--space-3);
+}
+
+.label-box__labels {
+    display: flex;
+    align-items: start;
+    padding: 0 var(--space-4);
+    overflow: auto;
+}
