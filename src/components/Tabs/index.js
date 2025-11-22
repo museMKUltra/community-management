@@ -1,3 +1,5 @@
-import Tabs from "./Tabs.jsx";
+import TabButton from "./TabButton";
 
-export default Tabs;
+export {
+    TabButton,
+};

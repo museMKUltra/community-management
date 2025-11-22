@@ -1,0 +1,43 @@
+.tab-box {
+    --tab-box-height: 798px;
+
+    height: var(--tab-box-height);
+    color: var(--color-gray-1);
+}
+
+.tab-box__nav {
+    display: flex;
+    gap: var(--space-3);
+}
+
+.tab-box__button {
+    height: 40px;
+    width: 200px;
+    font-size: var(--font-size-m);
+    color: var(--tab-box-button-color);
+    background: var(--tab-box-button-background);
+    border: 0.5px solid var(--tab-box-button-color);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.tab-box__button--active {
+    --tab-box-button-color: var(--color-primary);
+    --tab-box-button-background: #A4874333;
+}
+
+.tab-box__button--default {
+    --tab-box-button-color: var(--color-gray-3);
+    --tab-box-button-background: #000000CC;
+}
+
+.tab-box__content {
+    --tab-box-content-height: 758px;
+
+    box-sizing: border-box;
+    height: var(--tab-box-content-height);
+    background-color: #A487431A;
+    padding: var(--space-7) var(--space-8);
+    border: 0.5px solid var(--color-primary);
+    border-radius: var(--border-radius);
+    border-top-left-radius: 0;
+}
