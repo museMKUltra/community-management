@@ -1,8 +1,8 @@
 import "./style.css";
 
-function TabButton({tab, clickTab, getStyle}) {
+function TabButton({tab, clickTab, styleClass}) {
     return (
-        <button className={`tab-button ${getStyle(tab.key)}`} onClick={() => {
+        <button className={`tab-button ${styleClass}`} onClick={() => {
             clickTab(tab);
         }}>
             {tab.name}

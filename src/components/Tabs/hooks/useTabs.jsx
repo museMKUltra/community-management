@@ -1,6 +1,15 @@
 import {useCallback, useEffect, useState} from "react";
 import TabButton from "../TabButton";
 
+const getTabButtons = ({tabs, updateTab, getStyle}) => tabs.map(tab =>
+    <TabButton
+        key={tab.key}
+        tab={tab}
+        clickTab={tab => updateTab(tab)}
+        styleClass={getStyle(tab)}
+    />
+);
+
 export default function useTabs({tabs, buttonClasses}) {
     const [tabKey, setTabKey] = useState("");
     const [tabContentComponent, setTabContentComponent] = useState(<></>);
@@ -11,6 +20,10 @@ export default function useTabs({tabs, buttonClasses}) {
         }
         setTabKey(tab.key);
         setTabContentComponent(<>{tab.content}</>);
+    }, [tabKey]);
+
+    const getStyle = useCallback(tab => {
+        return tab.key === tabKey ? buttonClasses.active : buttonClasses.default;
     }, [tabKey]);
 
     const updateTabs = useCallback(() => {
@@ -30,18 +43,9 @@ export default function useTabs({tabs, buttonClasses}) {
 
     useEffect(updateTabs, []);
 
-    const tabButtons = tabs.map(tab =>
-        <TabButton
-            key={tab.key}
-            tab={tab}
-            clickTab={tab => updateTab(tab)}
-            getStyle={() => tab.key === tabKey ? buttonClasses.active : buttonClasses.default}
-        />
-    );
-
     return {
         tabKey,
-        tabButtons,
-        tabContentComponent
+        tabButtons: getTabButtons({tabs, updateTab, getStyle}),
+        tabContentComponent,
     }
 }
