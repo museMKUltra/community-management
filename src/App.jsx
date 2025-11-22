@@ -19,6 +19,7 @@ import panel from "./data/panel.json";
 import IconButton from "./components/IconButton";
 import Avatar from "./components/Avatar";
 import PageLabelGroup from "./components/PageLabelGroup";
+import Tabs from "./components/Tabs";
 
 function App() {
     return (
@@ -43,7 +44,7 @@ function App() {
                         labels={<PageLabelGroup list={panel.labels}/>}
                     />
                 }
-                rightBottom={<div style={{height: "798px"}}>rightBottom</div>}
+                rightBottom={<Tabs tabs={panel.tabs}/>}
             />
         </>
     )

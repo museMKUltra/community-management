@@ -1,0 +1,5 @@
+.tabs {
+    --tabs-height: 798px;
+
+    height: var(--tabs-height);
+}

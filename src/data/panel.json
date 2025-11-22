@@ -93,16 +93,22 @@
   ],
   "tabs": [
     {
+      "key": "equipment",
       "name": "影音設備",
-      "status": "active"
+      "status": "active",
+      "content": "Audio and video equipment."
     },
     {
+      "key": "streaming",
       "name": "影音串流",
-      "status": "default"
+      "status": "default",
+      "content": "Video streaming."
     },
     {
+      "key": "history",
       "name": "歷史紀錄",
-      "status": "default"
+      "status": "default",
+      "content":"Historical record."
     }
   ]
 }
