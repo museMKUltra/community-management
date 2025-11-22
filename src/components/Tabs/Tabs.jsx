@@ -1,41 +1,8 @@
 import "./style.css";
-import {useCallback, useEffect, useState} from "react";
-import TabButton from "./TabButton";
+import {useTabs} from "./hooks";
 
-function Tabs({tabs, styleClasses}) {
-    const [tabKey, setTabKey] = useState("");
-    const [tabContentComponent, setTabContentComponent] = useState(<></>);
-
-    const updateTab = useCallback(tab => {
-        setTabKey(tab.key);
-        setTabContentComponent(<>{tab.content}</>);
-    });
-
-    const updateTabs = useCallback(() => {
-        const hasTab = tabs.length > 0;
-        if (!hasTab) {
-            return;
-        }
-
-        const activeTab = tabs.find(tab => tab.status === "active");
-        if (activeTab) {
-            updateTab(activeTab);
-            return;
-        }
-
-        updateTab(tabs[0]);
-    }, [tabs]);
-
-    useEffect(updateTabs, []);
-
-    const tabButtons = tabs.map(tab =>
-        <TabButton
-            key={tab.key}
-            tab={tab}
-            clickTab={tab => updateTab(tab)}
-            getStyle={() => tab.key === tabKey ? styleClasses.active : styleClasses.default }
-        />
-    );
+function Tabs({tabs, buttonClasses}) {
+    const {tabButtons, tabContentComponent} = useTabs({tabs, buttonClasses});
 
     return (
         <div className="tabs">
