@@ -44,7 +44,7 @@ function App() {
                         labels={<PageLabelGroup list={panel.labels}/>}
                     />
                 }
-                rightBottom={<Tabs tabs={panel.tabs}/>}
+                rightBottom={<Tabs tabs={panel.tabs} styleClasses={{active: "tabs-active", default: "tabs-default"}}/>}
             />
         </>
     )

@@ -2,7 +2,7 @@ import "./style.css";
 import {useCallback, useEffect, useState} from "react";
 import TabButton from "./TabButton";
 
-function Tabs({tabs}) {
+function Tabs({tabs, styleClasses}) {
     const [tabKey, setTabKey] = useState("");
     const [tabContentComponent, setTabContentComponent] = useState(<></>);
 
@@ -33,6 +33,7 @@ function Tabs({tabs}) {
             key={tab.key}
             tab={tab}
             clickTab={tab => updateTab(tab)}
+            getStyle={() => tab.key === tabKey ? styleClasses.active : styleClasses.default }
         />
     );
 
